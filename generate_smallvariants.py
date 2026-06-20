@@ -28,7 +28,7 @@ def generate_smallvariants(resource):
             size = int(img.width / 4), int(img.height / 4)
 
             img_small = img.resize(size, Image.Resampling.LANCZOS)
-            img_small.save(wallpaper_small_path, "JPEG")
+            img_small.save(wallpaper_small_path, "PNG")
 
 def clean(wallpapers_path):
     wallpapers = os.listdir(wallpapers_path)
